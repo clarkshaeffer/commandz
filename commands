@@ -1,0 +1,45 @@
+#!/bin/zsh
+# custom commands for zsh shell
+# quotes aren't necessary to specify strings
+# they are provided here for clarity and readability
+function affirm() {
+	#number=$RANDOM
+	#RANGE=4
+	#let "number %= $RANGE"
+	#if [ $number -eq 0 ]
+	#then
+		echo "You are a hard working, strong and diligent man. You never give up. You are kind and charitable. You are a child of God and He loves you dearly."
+	#fi
+
+	#if [ $number -eq 1 ]
+	#then
+	#	echo "You can do this. ..."
+	#fi
+
+	#if [ $number -eq 2 ]
+	#then
+	#	echo "You are an excellent programmer. Keep going. You got this."
+	#fi
+
+	#if [ $number -eq 3 ]
+	#then
+	#	echo "You are a good man. You are bound for success. You are talented and your hard work pays off."
+	#fi
+}
+
+function thanks() {
+	echo "You're welcome."
+}
+
+function adventure() {
+	echo "Enter your name:"
+	echo -n "> "
+	read name
+	echo "Your name is: $name"
+	#echo "Enter 'yes'"
+	#read -p "> " response
+	#if [ $response = "yes" ]
+	#then
+	#	echo "Thank you!";
+	#fi
+}
