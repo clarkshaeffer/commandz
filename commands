@@ -23,7 +23,7 @@ function affirm() {
 
 	#if [ $number -eq 3 ]
 	#then
-	#	echo "You are a good man. You are bound for success. You are talented and your hard work pays off."
+	#	echo "You are a good person. You are bound for success. You are talented and your hard work pays off."
 	#fi
 }
 
@@ -42,4 +42,9 @@ function adventure() {
 	#then
 	#	echo "Thank you!";
 	#fi
+}
+
+# shortcut to run dunnet, the text-based adventure game in emacs
+function dunnet() {
+	emacs -batch -l dunnet
 }
