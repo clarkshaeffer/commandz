@@ -1,16 +1,8 @@
 #!/bin/zsh
-# custom commands for the shell (zsh in this case)
+# custom commands for zsh shell
 # quotes aren't necessary to specify strings
 # they are provided here for clarity and readability
-
-#export name=""
-#export male=false
-#export female=false
-#export intro=false
-
 function affirm() {
-	if [ $intro = true ]
-	then
 	#number=$RANDOM
 	#RANGE=4
 	#let "number %= $RANGE"
@@ -33,10 +25,6 @@ function affirm() {
 	#then
 	#	echo "You are a good person. You are bound for success. You are talented and your hard work pays off."
 	#fi
-	
-	else
-		echo "I'd recommend running `intro` first."
-	fi
 }
 
 function thanks() {
@@ -59,40 +47,4 @@ function adventure() {
 # shortcut to run dunnet, the text-based adventure game in emacs
 function dunnet() {
 	emacs -batch -l dunnet
-}
-
-function intro() {
-	if [ $intro = true ]
-	then
-		echo "You've already introduced yourself. Would you like to again? (y/n)"
-		echo -n "> "
-		read response
-		if [ $response = "y" ]
-		then
-			echo "By all means. Run the command again whenever you wish."
-			$intro=false
-		else
-			echo "Of course."
-		fi
-	else
-		echo "What's your nickname?"
-		echo -n "> "
-		read response
-		response=$name
-		$intro=true #issue here - can't write false to be true (or vice versa)
-		echo "What's your gender if you don't mind me asking? (m/f)"
-		echo -n "> "
-		read gender
-		if [ $gender = "m" ]
-		then
-			echo "Good to know, thanks!"
-			$male=true
-		elif [ $gender = "f" ]
-		then
-			echo "Wonderful, thanks!"
-			$female=true
-		else
-			echo "Okay, didn't mean to trouble you."
-		fi
-	fi
 }
