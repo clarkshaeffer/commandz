@@ -3,39 +3,66 @@
 # quotes aren't necessary to specify strings
 # they are provided here for clarity and readability
 function affirm() {
-	#number=$RANDOM
-	#RANGE=4
-	#let "number %= $RANGE"
-	#if [ $number -eq 0 ]
-	#then
-		echo "You are a hard working, strong and diligent man. You never give up. You are kind and charitable. You are a child of God and He loves you dearly."
-	#fi
-
-	#if [ $number -eq 1 ]
-	#then
-	#	echo "You can do this. ..."
-	#fi
-
-	#if [ $number -eq 2 ]
-	#then
-	#	echo "You are an excellent programmer. Keep going. You got this."
-	#fi
-
-	#if [ $number -eq 3 ]
-	#then
-	#	echo "You are a good person. You are bound for success. You are talented and your hard work pays off."
-	#fi
+	number=$RANDOM
+	RANGE=4
+	let "number %= $RANGE"
+	if [ $number -eq 0 ]
+	then
+		echo "You are a hard working, strong and diligent person. You are a child of God and He loves you dearly."
+	elif [ $number -eq 1 ]
+	then
+		echo "You can do this. You never give up."
+	elif [ $number -eq 2 ]
+	then
+		echo "You are an excellent programmer. Keep going. You got this."
+	elif [ $number -eq 3 ]
+	then
+		echo "You are bound for success. You are talented and your hard work pays off."
+	fi
 }
 
 function thanks() {
-	echo "You're welcome."
+	number=$RANDOM
+	RANGE=10
+	let "number %= $RANGE"
+	if [ $number -eq 0 ]
+	then
+		echo "But of course."
+	elif [ $number -eq 1 ]
+	then
+		echo "My pleasure."
+	elif [ $number -eq 2 ]
+	then
+		echo "It is I who should be thanking you."
+	elif [ $number -eq 3 ]
+	then
+		echo "You're very welcome, highness".
+	elif [ $number -eq 4 ]
+	then
+		echo "My greatest pleasure is to serve you."
+	elif [ $number -eq 5 ]
+	then
+		echo "But my sincerest compliments to you."
+	elif [ $number -eq 6 ]
+	then
+		echo "Please, thank you."
+	elif [ $number -eq 7 ]
+	then
+		echo "Your gratitude is heart-warming."
+	elif [ $number -eq 8 ]
+	then
+		echo "May you prosper all your days."
+	elif [ $number -eq 9 ]
+	then
+		echo "Nothing gives me greater joy than to be your computer."
+	fi
 }
 
 function adventure() {
 	echo "Enter your name:"
 	echo -n "> "
 	read name
-	echo "Your name is: $name"
+	echo "$name, this game is currently under construction. Stay tuned for updates!"
 	#echo "Enter 'yes'"
 	#read -p "> " response
 	#if [ $response = "yes" ]
