@@ -1,5 +1,5 @@
 # :kissing: commandz :kissing:
-A bunch of fun custom commands for your terminal, especially the Zsh shell.<br/>
+A bunch of custom commands for your terminal, especially the Zsh shell.<br/>
 Looking for more motivation? More productivity? More style?<br/>
 Look no further.
 
