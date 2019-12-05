@@ -7,14 +7,10 @@ Look no further.
 Depending on your shell configuration, the set up is mostly the same but only with some minor changes. <br/>
 It's all pretty simple stuff, so feel free to customize it however you like.
 
-1. Download the commands file from this repo.
-2. Make a hidden folder at your home directory.
-    - `mkdir ~/.commands`
-3. Put the commands file into said folder.
-    - `mv commands ~/.commands`
-4. Put the following line in your .rc file (~/.bashrc or ~/.zshrc or whatever depending on your config):
-    - `. ~/.commands/commands`
-5. Start a new terminal session, and enjoy!
+1. clone it: `git clone https://github.com/jdshaeffer/commandz`
+2. Put the following line in your .rc file (~/.bashrc or ~/.zshrc or whatever depending on your config):
+    - `. ~/commandz/commands`
+3. Customize however you like, start a new terminal session, and enjoy!
 
 ## Currently Supported Commands
 <strong>Note:</strong> Make your own functions within the commands file.<br/>
