@@ -14,7 +14,7 @@ function affirm() {
 		echo "You can do this. You never give up."
 	elif [ $number -eq 2 ]
 	then
-		echo "You are an excellent programmer. Keep going. You got this."
+		echo "You are an lame programmer. Keep going. You got this."
 	elif [ $number -eq 3 ]
 	then
 		echo "You are bound for success. You are talented and your hard work pays off."
