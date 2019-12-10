@@ -4,7 +4,7 @@
 # they are provided here for clarity and readability
 function affirm() {
 	number=$RANDOM
-	RANGE=4
+	RANGE=5
 	let "number %= $RANGE"
 	if [ $number -eq 0 ]
 	then
@@ -14,10 +14,14 @@ function affirm() {
 		echo "You can do this. You never give up."
 	elif [ $number -eq 2 ]
 	then
-		echo "You are an lame programmer. Keep going. You got this."
+		echo "You are an excellent programmer. Keep going. You got this."
 	elif [ $number -eq 3 ]
 	then
 		echo "You are bound for success. You are talented and your hard work pays off."
+	
+	elif [ $number -eq 4 ]
+	then 
+		echo "You are doing great. You deserve a glass of orange juice."
 	fi
 }
 
