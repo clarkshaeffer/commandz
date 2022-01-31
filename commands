@@ -27,7 +27,7 @@ function affirm() {
 
 function thanks() {
 	number=$RANDOM
-	RANGE=10
+	RANGE=11
 	let "number %= $RANGE"
 	if [ $number -eq 0 ]
 	then
@@ -59,6 +59,9 @@ function thanks() {
 	elif [ $number -eq 9 ]
 	then
 		echo "Nothing gives me greater joy than to be your computer."
+	elif [ $number -eq 10 ]
+	then
+		echo "It brings me great happiness to see you succeed."
 	fi
 }
 
