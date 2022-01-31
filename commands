@@ -4,7 +4,7 @@
 # they are provided here for clarity and readability
 function affirm() {
 	number=$RANDOM
-	RANGE=5
+	RANGE=9
 	let "number %= $RANGE"
 	if [ $number -eq 0 ]
 	then
@@ -21,13 +21,27 @@ function affirm() {
 	
 	elif [ $number -eq 4 ]
 	then 
-		echo "You are doing great. You deserve a glass of orange juice."
+		echo "Make it happen. You are in control."
+	elif [ $number -eq 5 ]
+	then 
+		echo "\"Success usually comes to those who are too busy to be looking for it.\"
+		-- Henry David Thoreau"
+	elif [ $number -eq 6 ]
+	then 
+		echo "\"If you are not willing to risk the usual, you will have to settle for the ordinary.\"
+		-- Jim Rohn"
+	elif [ $number -eq 7 ]
+	then 
+		echo "Not far away, there is someone who believes in you. Do it for them."
+	elif [ $number -eq 8 ]
+	then 
+		echo "You can do it!"
 	fi
 }
 
 function thanks() {
 	number=$RANDOM
-	RANGE=11
+	RANGE=19
 	let "number %= $RANGE"
 	if [ $number -eq 0 ]
 	then
@@ -40,7 +54,7 @@ function thanks() {
 		echo "It is I who should be thanking you."
 	elif [ $number -eq 3 ]
 	then
-		echo "You're very welcome, highness".
+		echo "You're very welcome, highness.".
 	elif [ $number -eq 4 ]
 	then
 		echo "My greatest pleasure is to serve you."
@@ -61,15 +75,32 @@ function thanks() {
 		echo "Nothing gives me greater joy than to be your computer."
 	elif [ $number -eq 10 ]
 	then
+		echo "You may as well call me Alfred. Or Jarvis."
+	elif [ $number -eq 11 ]
+	then
+		echo "You can always count on me."
+	elif [ $number -eq 12 ]
+	then
+		echo "I am always happy to help."
+	elif [ $number -eq 13 ]
+	then
+		echo "Oh, me? Nah, it was nothing."
+	elif [ $number -eq 14 ]
+	then
+		echo "It is my duty, after all."
+	elif [ $number -eq 15 ]
+	then
+		echo "You would have done the same for me."
+	elif [ $number -eq 16 ]
+	then
+		echo "It was the least I could do."
+	elif [ $number -eq 17 ]
+	then
+		echo "ʕ•ᴥ•ʔ < - - - -  Grateful bear is grateful to be in your computing presence"
+	elif [ $number -eq 18 ]
+	then
 		echo "It brings me great happiness to see you succeed."
 	fi
-}
-
-function adventure() {
-	echo "Enter your name:"
-	echo -n "> "
-	read name
-	echo "$name, this game is currently under construction. Stay tuned for updates!"
 }
 
 # shortcut to run dunnet, the text-based adventure game in emacs
@@ -77,7 +108,7 @@ function dunnet() {
 	emacs -batch -l dunnet
 }
 
-# not listed on readme, but if you have ghidra (a reverse compiler user for reverse engineering in ctf's), feel free to use!
-function ghidra() {
-	/Users/jd/Documents/personal/ctf/ghidra_9.1-BETA_DEV/ghidraRun
+# launch mysql client
+function mysql() {
+	/usr/local/mysql/bin/mysql -u root -p
 }
