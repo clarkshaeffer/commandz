@@ -10,7 +10,7 @@ It's all pretty simple stuff, so feel free to customize it however you like.
 1. clone it: `git clone https://github.com/jdshaeffer/commandz`
 2. Put the following line in your .rc file (~/.bashrc or ~/.zshrc or whatever depending on your config):
     - `. ~/commandz/commands`
-3. Customize however you like, start a new terminal session, and enjoy!
+3. Customize however you like, start a new terminal session, and enjoy! remember to run `exec /bin/zsh` or `exec /usr/bin/zsh` to reset the shell when updating.
 
 ## Currently Supported Commands
 <strong>Note:</strong> Make your own functions within the commands file.<br/>
